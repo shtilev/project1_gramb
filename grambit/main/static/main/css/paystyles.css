@@ -1,0 +1,190 @@
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.payblock-style {
+	width: auto;
+    align-content: center;
+    text-align: center;
+	padding: 20px 0 20px;
+}
+
+.pay-requisites-wait-dopinfo {
+	padding: 5px 0 10px 0;
+}
+
+.pay-requisites-dopinfo {
+	padding: 5px 0 5px 0;
+    font: 400 14px 'Montserrat', 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.pay-requisites-error {
+	padding: 20px 0 20px 0;
+    width: 80%;
+    margin: auto;
+    border: solid 1px #c62424;
+    border-radius: 10px;
+    color: #c62424;
+    font: 500 14px/18px 'Montserrat', 'Open Sans';
+}
+
+.pay-requisites-verification {
+	padding: 20px 0 20px 0;
+    width: 80%;
+    margin: auto;
+    border: solid 1px #61CD6B;
+    border-radius: 10px;
+    color: #61CD6B;
+    font: 500 14px/18px 'Montserrat', 'Open Sans';
+}
+
+/* Десктопные стили */
+.pay-table-loader-desktop {
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #54ADFF;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.pay-requisites-wait-desktop {
+  padding: 20px 0 0 0;
+  font: 500 18px/26px 'Montserrat', 'Open Sans';
+    color: #54ADFF;
+}
+
+.paytable-desktop {
+	width: 80%;
+  margin: auto;
+	border-collapse: separate;
+  color: white;
+}
+
+.qr-button-desktop {
+	padding: 5px;
+    border: solid 1px #54ADFF63;
+    background: none;
+    font: 500 14px/16px 'Montserrat', 'Open Sans';
+    color: #54ADFF;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+}
+
+.qr-button-desktop:hover {
+    background-color: #54ADFF; /* Green */
+    color: white;
+}
+
+.paytable-desktop {
+	width: 80%;
+    margin: auto;
+	border-collapse: separate;
+}
+
+.paytable-desktop thead th {
+	text-align: center;
+	padding: 10px;
+	font: 500 18px/26px 'Montserrat', 'Open Sans';
+	color: #54ADFF;
+}
+
+.paytable-desktop table, th, td {
+	padding: 7px;
+	vertical-align: top;
+}
+
+.paytable-desktop .table-param {
+	width: 40%;
+	font: 500 14px/1.5em 'Montserrat', 'Open Sans', sans-serif;
+	color: #54ADFF;
+}
+
+.paytable-desktop th { border: solid 1px #54ADFF63; }
+.paytable-desktop td { border: solid 1px #54ADFF63; word-break: break-all; }
+.paytable-desktop tr:first-child th:first-child { border-top-left-radius: 10px; border-bottom:none; }
+.paytable-desktop tr:first-child th:last-child { border-top-right-radius: 10px; border-bottom:none; }
+.paytable-desktop tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+.paytable-desktop tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+.paytable-desktop tr td:last-child { border-left:none; }
+.paytable-desktop tr:not(:last-child) td { border-bottom:none; }
+
+/* Мобильные стили */
+.pay-table-loader-mobile {
+  margin: auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #54ADFF;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.pay-requisites-wait-mobile {
+  padding: 20px 0 0 0;
+  font: 500 18px/26px 'Montserrat', 'Open Sans';
+    color: #54ADFF;
+}
+
+.qr-button-mobile {
+    padding: 5px;
+    border: solid 1px #54ADFF;
+    background: none;
+    font: 500 14px/16px 'Montserrat', 'Open Sans';
+    color: #54ADFF;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+}
+
+.qr-button-mobile:hover {
+    background-color: #54ADFF; /* Green */
+    color: white;
+}
+
+.paytable-mobile {
+	width: 90%;
+    margin: auto;
+	border-collapse: separate;
+    color: white;
+}
+
+.paytable-mobile thead th {
+  text-align: center;
+  padding: 10px;
+  font: 500 18px/26px 'Montserrat', 'Open Sans';
+  color: #54ADFF;
+}
+
+.paytable-mobile table, th, td {
+  padding: 7px;
+  vertical-align: top;
+}
+
+.paytable-mobile .table-param {
+  width: 40%;
+  font: 500 14px/1.5em 'Montserrat', 'Open Sans', sans-serif;
+  color: #54ADFF;
+}
+
+.paytable-mobile th { border: solid 1px #54ADFF; text-align: center; }
+.paytable-mobile td { border: solid 1px #54ADFF; text-align: center; word-break: break-all; }
+.paytable-mobile tr:first-child th:first-child { border-top-left-radius: 10px; border-bottom:none; }
+.paytable-mobile tr:first-child th:last-child { border-top-right-radius: 10px; border-bottom:none; }
+.paytable-mobile tr:last-child td:first-child { border-bottom-left-radius: 10px; }
+.paytable-mobile tr:last-child td:last-child { border-bottom-right-radius: 10px; }
+
+.paytable-mobile tr td:last-child {  }
+.paytable-mobile tr:not(:last-child) td { border-bottom:none; }
+

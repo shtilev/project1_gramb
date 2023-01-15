@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+    {% block content %}
+	<div class="thecontent">
+<h1 class="titlepage">Создание заявки</h1>
+
+		<div class="text">
+<form method="post">
+        {% csrf_token %}
+        {{ form.name }} <br><br>
+        {{ form.telegram }} <br><br>
+        {{ form.number }} <br><br>
+        {{ form.summ }} <br><br>
+        {{ form.message }}<br><br>
+<select name="theme" required="required">
+    <option value="">Выберите вариант</option>
+    <option>BTC на карту VISA/MASTERCARD</option>
+    <option>ВТС на карту МИР</option>
+    <option>ETC на карту</option>
+    <option>Другой платеж</option>
+  </select>
+    <p> {{ error }}</p><br>
+
+
+
+        	<div class="wlinesubmit">
+			<input type="submit" formtarget="_top" name value="Создать">
+		</div>
+    </form>
+        <div class="clear"></div>
+		</div>
+
+
+
+</div>
+    {% endblock %}
